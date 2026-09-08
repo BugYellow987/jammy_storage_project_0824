@@ -4,7 +4,7 @@ model: /home/d11405003/Yolov11_AttnRes/ultralytics/cfg/models/11_myself/yolo11-6
 data: ../../dataset/data.yaml
 epochs: 600
 time: null
-patience: 100
+patience: 0
 batch: 16
 imgsz: 640
 save: true
@@ -12,8 +12,8 @@ save_period: -1
 cache: false
 device: '0'
 workers: 8
-project: null
-name: train-2
+project: runs/segment
+name: yolo11-6csar-0906iim-3
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -110,4 +110,4 @@ auto_augment: randaugment
 erasing: 0.4
 cfg: null
 tracker: botsort.yaml
-save_dir: /home/d11405003/Yolov11_AttnRes/runs/segment/train-2
+save_dir: /home/d11405003/Yolov11_AttnRes/runs/segment/runs/segment/yolo11-6csar-0906iim-3
